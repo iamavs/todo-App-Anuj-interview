@@ -1,0 +1,14 @@
+---
+- hosts: all
+  user: ansadmin
+  tasks:
+    - name: copy source code from Master to remote host
+      copy: src={{ item.src }} dest={{ item.dest }}
+      with_items:
+        - { src: './app', dest: '~/todo-app/' }
+        - { src: './docker-compose.yaml', dest: '~/todo-app/docker-compose.yaml' }
+
+    - name: Deploying the todo application and mysqldb
+      shell:
+        cmd: "docker-compose up -d"
+        chdir: "~/todo-app"
