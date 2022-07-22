@@ -4,6 +4,6 @@
   
   tasks:  
 
-    - name: Deploying the todo application and mysqldb
+    - name: Deploying the todo application and mysqldb using docker compose
       shell:
         cmd: "docker-compose up -d"
