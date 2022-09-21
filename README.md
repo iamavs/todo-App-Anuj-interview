@@ -21,3 +21,6 @@ ansible-palybook docker-install-playbook.yaml
 
 # Deploying todo-application and sql app using Docker Compose
 ansible-playbook deploy-todo-playbook.yaml
+
+
+<img width="733" alt="Screenshot 2022-09-21 at 11 44 03 AM" src="https://user-images.githubusercontent.com/95232494/191427893-e5744f6a-1127-40ef-9b6d-41d445dea295.png">
